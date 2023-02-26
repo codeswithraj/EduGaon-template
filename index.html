@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .banner {
+        margin-top: 40px;
+        position: relative;
+      }
+      .banner_Text {
+        color: white;
+        margin: auto;
+        position: absolute;
+        top: 30%;
+        left: 12%;
+      }
+      .abc {
+        background-color: green;
+        color: white;
+        width: 45%;
+        padding: 2%;
+        border-radius: 10px;
+        float: left;
+        margin: 2%;
+      }
+      .counter-contents h2 {
+        margin-left: 28%;
+        color: #fff;
+        font-size: 45px;
+        margin-top: 5%;
+        position: absolute;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      .counter-contents p {
+        margin-left: 36%;
+        margin-top: 10%;
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        margin-bottom: 5px;
+      }
+      .counter-content p {
+        margin-left: 20%;
+        margin-top: 6%;
+        color: #fff;
+        font-weight: 400;
+        font-size: 4vh;
+        position: absolute;
+        margin-bottom: 5px;
+      }
+      .counter-area {
+        background: url(https://barakahit.net/html/Techmax/assets/img/banner-bg.jpg);
+        background-attachment: fixed;
+        background-position: 50%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        z-index: 1;
+      }
+      .nav-item a {
+        color: white;
+      }
+      .nav-item a:hover {
+        color: gray;
+      }
+      .photo:hover {
+        opacity: 0.6;
+      }
+      @media only screen and (max-width: 600px) {
+        .counter-contents h2 {
+          margin-left: 6%;
+          color: #fff;
+          font-size: 45px;
+          margin-top: 12%;
+          position: absolute;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        .counter-contents p {
+          margin-left: 22%;
+          margin-top: 45%;
+          color: #fff;
+          font-size: 20px;
+          position: absolute;
+          margin-bottom: 5px;
+        }
+        .counter-content p {
+          margin-left: 2%;
+          margin-top: 6%;
+          color: #fff;
+          font-weight: 400;
+          font-size: 4vh;
+          position: absolute;
+          margin-bottom: 5px;
+        }
+        .counter-area {
+          background: url(https://barakahit.net/html/Techmax/assets/img/banner-bg.jpg);
+          background-attachment: fixed;
+          background-position: 50%;
+          height: 350px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: #fff;
+          position: relative;
+          text-align: center;
+          width: 100%;
+          z-index: 1;
+        }
+      }
+    </style>
+    <title>EduGaon</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark fixed-top"
+      style="background-color: orange"
+    >
+      <div class="container">
+        <a class="navbar-brand text-light" href="index.html"
+          ><h3>EduGaon</h3></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Our Offering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Our coach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">The Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">The founders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="login.php"
+                ><button class="btn btn-primary">Login</button></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="signup.php"
+                ><button class="btn btn-primary">Sign up</button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="home-slide-1.jpg" class="d-block" />
+            <div class="banner_Text">
+              <h4>2 Year</h4>
+              <h1>
+                Professional <br />
+                Diploma <br />
+                in <br />
+                Software <br />
+                Engineering
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="home-slide-2.jpg" class="d-block" />
+            <div class="banner_Text">
+              <h4>2 Year</h4>
+              <h1>
+                Professional <br />
+                Diploma <br />
+                in <br />
+                Software <br />
+                Engineering
+              </h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="home-slide-3.jpg" class="d-block" />
+            <div class="banner_Text">
+              <h4>2 Year</h4>
+              <h1>
+                Professional <br />
+                Diploma <br />
+                in <br />
+                Software <br />
+                Engineering
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <div class="card" style="margin: auto">
+            <img
+              class="card-img-top"
+              src="https://www.freeiconspng.com/thumbs/person-icon/clipart--person-icon--cliparts-15.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="art.jpg" width="100%" alt="" />
+        </div>
+        <div class="col-sm-8">
+          <p>
+            <b class="m-2">
+              We focus on learning not on training, we don't want to create a
+              trained worker. We want to enable your potential to achieve more .
+            </b>
+          </p>
+          <div class="abc">
+            <h4 style="color: black">2 Years</h4>
+            <h2>
+              Professional diploma <br />
+              in software <br />
+              engineering
+            </h2>
+          </div>
+          <div class="abc" style="background-color: blueviolet">
+            <h4 style="color: black">6 months</h4>
+            <h2>
+              English <br />
+              communication <br />
+              skill
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="counter-area section-padding mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="counter-contents">
+              <h2>Learn, Apply and Work</h2>
+              <p class="text-warning">Apply for march batch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center m-5" style="font-weight: 200; font-size: 5vh">
+      Our Coach
+    </p>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-sm-4">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Vijay Kumar
+          </p>
+          <img src="coach2.jpg" style="width: 100%" class="photo" alt="" />
+          <p class="mt-3 text-muted">Architect <br /><b>Tata Digital</b></p>
+          <p class="mt-3 text-muted">
+            <b> MBA in Technopreneurship</b> <br />
+            IIT, Chicago, USA
+          </p>
+          <p class="text-muted">
+            16+ years of experience in working with Web and Mobile technologies
+          </p>
+          <p class="text-muted mt-3">Currently building SuperApp for India</p>
+        </div>
+        <div class="col-sm-4">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Rajiv Singh
+          </p>
+          <img src="coach1.jpg" style="width: 100%" class="photo" alt="" />
+          <p class="mt-3 text-muted">
+            Sr. Drupal Developer <br /><b>Axelerant</b>
+          </p>
+          <p class="mt-3 text-muted">
+            <b> MCA</b> <br />
+            Sikkim Manipal University
+          </p>
+          <p class="text-muted">
+            12+ years of diverse experience in backend and web technologies.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Savita Maurya
+          </p>
+          <img src="coach3.jpg" style="width: 100%" class="photo" alt="" />
+          <p class="mt-3 text-muted">
+            English Communication Expert <br /><b>EduGaon</b>
+          </p>
+          <p class="mt-3 text-muted">
+            <b>PG in American and British language Literature</b> <br />
+            Delhi University
+          </p>
+          <p class="text-muted">Worked with NIIT Company as English Faculty</p>
+          <p class="text-muted mt-3">
+            Making students professional in english Communication
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="counter-area section-padding mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-3">
+            <div class="counter-content">
+              <p>
+                Our mission is to empower rural students in India by <br />
+                improving their <b>English communication skills</b> and trained
+                <br />
+                them with <b>emerging technology.</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center m-5" style="font-weight: 200; font-size: 5vh">
+      The Mentors
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Nik Rokop
+          </p>
+          <img src="mentor1.jpg" width="100%" class="photo" alt="" />
+          <p class="mt-3 text-center" style="font-size: 2.5vh">
+            <b
+              >Associate Professor of Entrepreneurship <br />
+              Illinois Institute of Technology</b
+            >
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Ashish Rangnekar
+          </p>
+          <img src="mentor2.jpg" width="100%" class="photo" alt="" />
+          <p class="mt-3 text-center" style="font-size: 2.5vh">
+            <b
+              >CEO/Co-Founder BenchPrep <br />
+              Education Technology Advocate</b
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center m-5" style="font-weight: 200; font-size: 5vh">
+      The Founders
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Vijay Kumar
+          </p>
+          <img src="founder1.jpg" width="100%" class="photo" alt="" />
+          <p class="mt-3 text-center" style="font-size: 2.5vh">
+            <b>Founder</b>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="text-center" style="font-weight: 150; font-size: 3vh">
+            Rahul Raj
+          </p>
+          <img src="founder2.jpg" width="100%" class="photo" alt="" />
+          <p class="mt-3 text-center" style="font-size: 2.5vh">
+            <b>Founder</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center m-3" style="font-weight: 200; font-size: 5vh">
+      Contact Centre
+    </p>
+    <p class="text-center m-3" style="font-weight: 200; font-size: 3vh">
+      Have a question? Call us at +91 8709579455
+    </p>
+    <div class="container" style="background-color: lightgray">
+      <div class="row">
+        <div class="col-sm-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7173.621717320314!2d84.9154240697754!3d25.9742428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992cb4956cb7749%3A0xafc90d044c9f960a!2sEduGaon!5e0!3m2!1sen!2sin!4v1677172368595!5m2!1sen!2sin"
+            width="98%"
+            style="margin: 1%"
+            class="mb-3"
+            height="400"
+          ></iframe>
+        </div>
+        <div class="col-sm-6">
+          <form style="border: 2px solid black">
+            <div class="row">
+              <div class="mb-3 mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Name"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3 mt-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3 mt-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Subject"
+                  name="email"
+                />
+              </div>
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Message"
+                id="comment"
+                name="text"
+                style="width: 93%; margin: 3%"
+              ></textarea>
+            </div>
+            <button
+              class="btn btn-primary mb-2 mt-2"
+              style="align-content: center"
+            >
+              Send a message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid"
+      style="height: 100px; background-color: orange; margin-top: 3%"
+    >
+      <p class="text-center p-5" style="font-weight: 600; font-size: 2vh">
+        &copy Edugaon Education and Innovation Labs Private Limited
+      </p>
+    </div>
+  </body>
+</html>
